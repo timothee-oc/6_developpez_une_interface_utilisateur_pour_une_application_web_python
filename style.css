@@ -1,0 +1,165 @@
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10%;
+    background-color: firebrick;
+    color: whitesmoke;
+}
+
+header h1 {
+    margin-left: 10%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav a {
+    color: whitesmoke;
+    margin-right: 10%;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.first-best {
+    width: 50%;
+    display: flex;
+    margin-bottom: 10%;
+    color: whitesmoke;
+}
+
+.first-best-content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.first-best-title {
+    font-size: 60px;
+}
+
+.first-best-description {
+    text-align: justify;
+    padding: 0 2%;
+    font-size: 40px;
+}
+
+.first-best-button {
+    background-color: firebrick;
+    border-radius: 50%;
+    width: 30%;
+    height: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.first-best-image {
+    width: 50%;
+    height: 100%;
+}
+
+.category {
+    width: 90%;
+}
+
+.category-title {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1%;
+}
+
+.category-carousel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.movie-image {
+    width: 20%;
+    margin: 0 1%;
+}
+
+.category button {
+    background-color: firebrick;
+    color: whitesmoke;
+    font-size: 100px;
+    font-weight: bold;
+    width: 10%;
+}
+
+.category button:disabled {
+    opacity: 50%;
+}
+
+.next-button {
+    border-radius: 0 50% 50% 0;
+    margin-left: 1%;
+}
+
+.previous-button {
+    border-radius: 50% 0 0 50%;
+    margin-right: 1%;
+}
+
+.modal {
+    position: fixed;
+    left: 5%;
+    top: 10%;
+    height: 600px;
+    width: 90%;
+    background-color: black;
+    border: 5px solid firebrick;
+}
+
+.modal-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.modal-content-left * {
+    margin-bottom: 10px;
+}
+
+.modal-image {
+    height: 100%;
+    width: 30%;
+}
+
+.modal-infos {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.modal-button {
+    background-color: firebrick;
+    border-radius: 50%;
+    width: 30%;
+    height: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
