@@ -5,12 +5,15 @@ let categoryDivs = document.querySelectorAll(".category")
 let categoryTitles = document.querySelectorAll(".category-title")
 
 const modal = document.querySelector(".modal")
+const modalBackground = document.querySelector(".modal-background")
 let modalTitle = modal.querySelector(".modal-title")
 let modalImage = modal.querySelector(".modal-image")
 let modalInfos = modal.querySelector(".modal-infos")
 modal.querySelector(".modal-button").addEventListener("click", () => {
     modalInfos.innerHTML = ""
     modal.style["display"] = "none"
+    modalBackground.style["display"] = "none"
+    document.body.style["overflow"] = "auto"
 })
 
 async function main() {    
@@ -124,6 +127,8 @@ function setModalContent(modalTriggerNode, movieData) {
             modalInfos.appendChild(info) 
         }
         modal.style["display"] = "flex"
+        modalBackground.style["display"] = "block"
+        document.body.style["overflow"] = "hidden"
     })
 }
 
