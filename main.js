@@ -9,12 +9,17 @@ const modalBackground = document.querySelector(".modal-background")
 let modalTitle = modal.querySelector(".modal-title")
 let modalImage = modal.querySelector(".modal-image")
 let modalInfos = modal.querySelector(".modal-infos")
-modal.querySelector(".modal-button").addEventListener("click", () => {
-    modalInfos.innerHTML = ""
-    modal.style["display"] = "none"
-    modalBackground.style["display"] = "none"
-    document.body.style["overflow"] = "auto"
-})
+setCloseModalEvent(modal.querySelector(".modal-button"))
+setCloseModalEvent(modalBackground)
+
+function setCloseModalEvent(triggerNode) {
+    triggerNode.addEventListener("click", () => {
+        modalInfos.innerHTML = ""
+        modal.style["display"] = "none"
+        modalBackground.style["display"] = "none"
+        document.body.style["overflow"] = "auto"
+    })
+}
 
 async function main() {    
     const bestMoviesData = await getBestMoviesData(range=8)
